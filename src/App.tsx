@@ -19,10 +19,10 @@ const App = (): JSX.Element => {
       Pilot.configHls(hlsObj, hlsVersion);
       setHlsConfig(hlsObj.config);
 
-      Pilot.loadConfig('onsport_property');
-      setHlsURL('https://eqosqbkcuwliv.vcdn.cloud/hls/test2/index.m3u8');
+      Pilot.loadConfig('PROPERTY_ID');
+      setHlsURL('HLS_URL');
     });
-    Pilot.initPilot('192fb6afa8e2475c9441d0b0fdd6535d');
+    Pilot.initPilot('PARTNER_ID');
     // eslint-disable-next-line
   }, []);
 
